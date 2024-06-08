@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.input-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #218838;
+}
+
+.recommendations {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.recommendations h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.recommendation-group {
+    margin-bottom: 20px;
+    background: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recommendation-group h3 {
+    font-size: 1.8em;
+}
+
+.recommendation-group p {
+    font-size: 1.2em;
+}

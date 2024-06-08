@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropSense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header Section -->
+    <header class="bg-green-600 text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="logo">
+                <img src="logo.png" alt="CropSense Logo" class="h-12">
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-cover bg-center relative h-screen" style="background-image: url('https://www.google.com/imgres?q=farming&imgurl=https%3A%2F%2Fwww.agrivi.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fwepik-photo-mode-2022722-16315.jpeg&imgrefurl=https%3A%2F%2Fwww.agrivi.com%2Fblog%2Fprecision-farming%2F&docid=AY241ltCNaPWuM&tbnid=fNIUNW-K9t3wsM&vet=12ahUKEwi8vsT90JuGAxW6dPUHHVz4BCQQM3oECC4QAA..i&w=2000&h=979&hcb=2&ved=2ahUKEwi8vsT90JuGAxW6dPUHHVz4BCQQM3oECC4QAA');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto flex justify-center items-center h-full">
+            <div class="text-center text-white z-10">
+                <h1 class="text-5xl font-bold">Welcome to CropSense!</h1>
+                <p class="text-xl mt-4">Get personalized crop recommendations based on your input.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <div class="bg-white p-20 rounded-lg shadow-lg -mt-20 relative z-5">
+                <form action="/" method="post" class="space-y-6">
+                    <div class="form-group">
+                        <label for="temperature" class="block text-gray-700 font-semibold">Temperature (Celsius):</label>
+                        <input type="number" id="temperature" name="temperature" required class="w-full p-3 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="form-group">
+                        <label for="humidity" class="block text-gray-700 font-semibold">Humidity (%):</label>
+                        <input type="number" id="humidity" name="humidity" required class="w-full p-3 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="form-group">
+                        <label for="rainfall" class="block text-gray-700 font-semibold">Rainfall (mm):</label>
+                        <input type="number" id="rainfall" name="rainfall" required class="w-full p-3 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="form-group">
+                        <label for="soil_type" class="block text-gray-700 font-semibold">Soil Type:</label>
+                        <select id="soil_type" name="soil_type" class="w-full p-3 border border-gray-300 rounded-lg">
+                            <option value="Clayey">Clayey</option>
+                            <option value="Loamy">Loamy</option>
+                            <option value="Sandy">Sandy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="region" class="block text-gray-700 font-semibold">Region:</label>
+                        <select id="region" name="region" class="w-full p-3 border border-gray-300 rounded-lg">
+                            <option value="East">East</option>
+                            <option value="North">North</option>
+                            <option value="South">South</option>
+                            <option value="West">West</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="bg-green-600 text-white py-3 px-6 rounded-lg shadow hover:bg-green-700 transition duration-300">Get Recommendations</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Recommendations</h2>
+            <div class="recommendation-group">
+                <h3 class="text-2xl font-semibold">Recommended Fertilization Method:</h3>
+                <p class="text-lg">{{ recommendations[0] }}</p>
+            </div>
+            <div class="recommendation-group mt-6">
+                <h3 class="text-2xl font-semibold">Recommended Pest Control Method:</h3>
+                <p class="text-lg">{{ recommendations[1] }}</p>
+            </div>
+            <div class="recommendation-group mt-6">
+                <h3 class="text-2xl font-semibold">Recommended Irrigation Method:</h3>
+                <p class="text-lg">{{ recommendations[2] }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-green-600 text-white">
+        <div class="container mx-auto py-6 px-6 flex justify-between items-center">
+            <div>&copy; 2024 CropSense. All Rights Reserved.</div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

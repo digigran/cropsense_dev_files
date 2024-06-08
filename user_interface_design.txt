@@ -1,0 +1,81 @@
+ ___________________________________________________________
+|                       Header                                |
+|-----------------------------------------------------------|
+|  Logo            Navigation Menu (Home, About, Contact)   |
+|___________________________________________________________|
+
+ ___________________________________________________________
+|                         Hero Section                        |
+|-----------------------------------------------------------|
+|                   Welcome to CropSense!                   |
+|              Get personalized crop recommendations        |
+|              based on your input.                         |
+|                                                           |
+|                   [Input Form]                             |
+|  -------------------------------------------              |
+|  | Temperature: [   ]    Humidity: [   ]  |              |
+|  | Rainfall:    [   ]    Soil Type: [Dropdown]            |
+|  | Region:      [Dropdown]                                |
+|  |                 [Submit]                               |
+|  -------------------------------------------              |
+|                                                           |
+|___________________________________________________________|
+
+ ___________________________________________________________
+|                    Recommendations Section                 |
+|-----------------------------------------------------------|
+|                 Recommended Fertilization:                |
+|                 - [Fertilization Method 1]                |
+|                 - [Fertilization Method 2]                |
+|                 - [Fertilization Method 3]                |
+|                                                           |
+|                 Recommended Pest Control:                 |
+|                 - [Pest Control Method 1]                 |
+|                 - [Pest Control Method 2]                 |
+|                 - [Pest Control Method 3]                 |
+|                                                           |
+|                 Recommended Irrigation:                   |
+|                 - [Irrigation Method 1]                   |
+|                 - [Irrigation Method 2]                   |
+|                 - [Irrigation Method 3]                   |
+|                                                           |
+|___________________________________________________________|
+
+ ___________________________________________________________
+|                         Footer                              |
+|-----------------------------------------------------------|
+|                    Copyright © 2024 CropSense             |
+|                Terms of Service | Privacy Policy          |
+|___________________________________________________________|
+
+Color Scheme:
+
+Primary Color: Green (#2ECC71) - This color represents growth, nature, and agriculture.
+Secondary Color: Blue (#3498DB) - Blue adds a sense of trust and reliability.
+Accent Color: Orange (#FFA500) - Orange can be used sparingly to highlight important elements or calls to action.
+
+Typography:
+
+Headings: Modern and bold font like "Roboto" or "Montserrat" for headings to grab attention.
+Body Text: Legible and clean font like "Open Sans" or "Lato" for body text for easy readability.
+
+Logo:
+
+logo.png
+
+Layout:
+
+Clean layout and minimalistic with plenty of white space to avoid clutter.
+Grid-based layout for consistency and ease of navigation.
+Input form and recommendation sections are prominently displayed on the homepage.
+
+Branding Elements:
+
+Images of crops, fields, or farming equipment as background images or illustrations to reinforce the agricultural theme.
+Icons related to temperature, humidity, rainfall, soil types, and regions to visually represent the input fields.
+Subtle animations or transitions to enhance user experience and engagement.
+
+Responsive Design:
+
+Website is fully responsive and accessible across different devices, including desktops, laptops, tablets, and smartphones.
+Test the website on various screen sizes to ensure that the layout and content are displayed correctly.
