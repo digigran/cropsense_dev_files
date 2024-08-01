@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CropSense</title>
+    <meta name="description" content="Learn more about CropSense, our mission, team, and what drives us to provide innovative solutions for agriculture.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header Section -->
+    <header class="bg-green-600 text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="CropSense Logo" class="h-12">
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:underline focus:outline-none focus:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline focus:outline-none focus:underline">About</a></li>
+                    <li><a href="contact.html" class="hover:underline focus:outline-none focus:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-cover bg-center relative h-72" style="background-image: url('about-hero.jpeg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto flex justify-center items-center h-full">
+            <div class="text-center text-white z-10">
+                <h1 class="text-4xl font-bold">About CropSense</h1>
+                <p class="text-lg mt-2">Empowering Farmers with Data-Driven Insights</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <div class="bg-white p-8 md:p-20 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    At CropSense, our mission is to empower farmers with data-driven insights to make informed decisions. We believe in the power of technology to transform agriculture, making it more efficient, sustainable, and productive.
+                </p>
+                <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    Founded in 2023, CropSense started as a small student-led project aimed at providing local farmers with better crop recommendations. Today, we are proud to serve the agriculture community, leveraging advanced analytics and machine learning to offer personalized agricultural solutions.
+                </p>
+                <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 1" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Devansh Ruia</h3>
+                        <p class="text-gray-600">Founder and Fullstack Developer</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 2" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Roan Gurnani</h3>
+                        <p class="text-gray-600">Frontend Developer</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 3" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Anish Goel</h3>
+                        <p class="text-gray-600">Frontend Developer</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 4" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Vivaan </h3>
+                        <p class="text-gray-600">Marketing</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 5" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Hreeday Dhola</h3>
+                        <p class="text-gray-600">Marketing</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 6" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Vivaan </h3>
+                        <p class="text-gray-600">Marketing</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 7" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Tanay Mody</h3>
+                        <p class="text-gray-600">Data Manager</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 8" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Ayaan Singh</h3>
+                        <p class="text-gray-600">Environmental Scientest</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <img src="{{ url_for('static', filename='team-member1.jpeg') }}" alt="Team Member 9" class="rounded-full mx-auto mb-4 h-32 w-32 object-cover">
+                        <h3 class="text-xl font-semibold">Ishaan Mody</h3>
+                        <p class="text-gray-600">Chemist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-green-600 text-white">
+        <div class="container mx-auto py-6 px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">&copy; 2024 CropSense. All Rights Reserved.</div>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                    <li><a href="index.html" class="hover:underline focus:outline-none focus:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline focus:outline-none focus:underline">About</a></li>
+                    <li><a href="contact.html" class="hover:underline focus:outline-none focus:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
