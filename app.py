@@ -14,6 +14,13 @@ def index():
         region = request.form['region']
         recommendations = generate_recommendations(temperature, humidity, rainfall, soil_type, region)
     return render_template('index.html', recommendations=recommendations)
+@app.route('/about')
+def about():
+    return render_template('templates/about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('templates/contact.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
